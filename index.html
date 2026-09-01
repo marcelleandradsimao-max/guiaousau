@@ -350,7 +350,8 @@
         <span id="save-indicator">conteúdo editável — salvo neste dispositivo</span>
       </div>
       <h1 class="title">Guia de Respostas Padrão</h1>
-      <p class="subtitle">Quem trabalha na ouvidoria sabe que cada manifestação representa um cidadão com uma necessidade real. Respostas organizadas por situação e com os campos de preenchimento sinalizados, prontos para editar.</p>
+      <p class="subtitle">Este guia reúne modelos de respostas para as situações mais recorrentes no atendimento da Ouvidoria de Saúde. Os textos estão organizados de acordo com as diferentes etapas do tratamento de uma manifestação — desde os encaminhamentos iniciais até as respostas conclusivas, incluindo solicitações de complemento, comunicações intermediárias e devoluções. Para utilizar o guia, basta localizar a situação correspondente, preencher os campos indicados e, quando necessário, adaptar o texto às particularidades da manifestação. Os modelos podem ser editados e as alterações ficam salvas neste guia.
+</p>
     </div>
     <div class="seal">
       <div class="seal-text">Ouvidoria<b>Saúde</b>OGE·MG</div>
@@ -388,6 +389,15 @@ const DEFAULT_DATA = {
       dot: "#7fa3b8",
       desc: "Do recebimento da manifestação ao encaminhamento para o órgão responsável.",
       cards: [
+          {
+          title: "Encaminhamento: Solicitação",
+          text: `A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
+A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
+Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
+
+Atenciosamente,
+{{OUVIDORIA|Ouvidoria de Saúde/OGE-MG}}`
+        },
         {
           title: "Encaminhamento: Denúncia",
           text: `A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
@@ -403,15 +413,6 @@ Atenciosamente,
           text: `A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
 A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
 Para reclamações, a resposta conclusiva precisa trazer a decisão administrativa final sobre o caso (Decreto 49.053/2025, art. 11, §2º).
-Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde/OGE-MG}}`
-        },
-        {
-          title: "Encaminhamento: Solicitação",
-          text: `A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
-A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
 Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
 
 Atenciosamente,
@@ -619,7 +620,7 @@ Atenciosamente,
       label: "Conclusivas",
       color: "var(--b4)",
       dot: "#7fc99a",
-      desc: "A resposta final para encerramento da manifestação.",
+      desc: "A resposta final — clara e no prazo.",
       cards: [
         {
           title: "Conclusiva: Registro no MGOUV (veio do OuvidorSUS) — identificada ou sigilosa",
