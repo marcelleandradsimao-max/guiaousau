@@ -404,11 +404,11 @@ const DEFAULT_DATA = {
       label: "Encaminhamentos",
       color: "var(--b1)",
       dot: "#7fa3b8",
-      desc: "Do recebimento da manifestação ao encaminhamento para o órgão responsável.",
+      desc: "Inserir aqui a situação em que se utilizam as mensagens de encaminhamento",
       foot: "* Devem ser solicitados apenas os dados estritamente necessários para o andamento da manifestação.",
       cards: [
           {
-          title: "Encaminhamento: Solicitação *",
+          title: "Encaminhamento: Solicitação, Reclamação, Sugestão, Elogio e Informação *",
           text: `Prezado(a) Senhor(a),
 A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
 A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
@@ -429,51 +429,11 @@ Atenciosamente,
 {{OUVIDORIA|Ouvidoria de Saúde}}`
         },
         {
-          title: "Encaminhamento: Reclamação *",
+          title: "Encaminhamento: Comunicação de irregularidade *",
           text: `Prezado(a) Senhor(a),
-A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
-A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
-Para reclamações, a resposta conclusiva precisa trazer a decisão administrativa final sobre o caso (Decreto 49.053/2025, art. 11, §2º).
-Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde}}`
-        },
-        {
-          title: "Encaminhamento: Elogio *",
-          text: `Prezado(a) Senhor(a),
-A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
-A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
-Para elogios, a resposta conclusiva precisa confirmar que o servidor elogiado e sua chefia foram comunicados (Decreto 49.053/2025, art. 11, §5º).
-Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde}}`
-        },
-        {
-          title: "Encaminhamento: Sugestão *",
-          text: `Prezado(a) Senhor(a),
-A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
-A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
-Para sugestões, a resposta conclusiva precisa informar se a proposta poderá ou não ser adotada (Decreto 49.053/2025, art. 11, §3º).
-Os dados pessoais do(a) manifestante são sigilosos e só podem ser usados para fins de apuração (Lei 13.460/2017, art. 10, §7º).
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde}}`
-        },
-        {
-          title: "Encaminhamento interno: por competência (outra Ouvidoria Temática)",
-          text: `Prezado(a) Senhor(a),
-Encaminhamos a presente manifestação à Ouvidoria de {{OUVIDORIA TEMÁTICA}}, pois, após análise preliminar, verificamos se tratar de tema afeto às competências daquela unidade.
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde}}`
-        },
-        {
-          title: "Encaminhamento interno: por desdobramento (mais de um tema)",
-          text: `Prezado(a) Senhor(a),
-A presente manifestação abrange, ao mesmo tempo, temas de competência desta {{OUVIDORIA|Ouvidoria de Saúde}} e da Ouvidoria de {{OUVIDORIA TEMÁTICA}}.
-Diante disso, realizamos o desdobramento e encaminhamos a manifestação para que sejam tomadas as providências cabíveis pela unidade competente.
+A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que sejam tomadas as providências cabíveis, conforme a Lei nº 13.460/2017.
+A resposta a essa ouvidoria deverá ser redigida com clareza e linguagem acessível.
+Levando em conta que todos têm direito à proteção de seus dados pessoais, advertimos que os dados do manifestante deverão ser usados estritamente para fins de análise da sua demanda, não podendo, em nenhuma hipótese, serem repassados a terceiros. (Lei 13.460/2017, art. 10, §7º).
 
 Atenciosamente,
 {{OUVIDORIA|Ouvidoria de Saúde}}`
