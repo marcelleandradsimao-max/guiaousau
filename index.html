@@ -476,6 +476,7 @@ Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
       cards: [
         {
           title: "Complemento: Manifestação anônima que não é denúncia",
+          pedeDados: true,
           text: `Prezado(a) Senhor(a),
 Obrigado por registrar sua manifestação. Sua participação é muito importante para melhorar os serviços do SUS/MG.
 Analisamos o seu registro e identificamos que se trata de uma {{TIPO: reclamação / solicitação / sugestão / elogio}}. Para esse tipo de manifestação, não é possível manter o anonimato — só denúncias podem ser feitas sem identificação.
@@ -492,6 +493,7 @@ Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
         },
         {
           title: "Complemento: Informações insuficientes para apuração",
+          pedeDados: true,
           text: `Prezado(a) Senhor(a),
 Agradecemos sua participação para melhorar os serviços públicos do SUS/MG.
 Após análise do seu registro, identificamos que faltam informações para que o órgão responsável possa investigar o caso. Por isso, pedimos que complemente sua manifestação em até 10 dias corridos com:
@@ -514,6 +516,7 @@ Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
         },
         {
           title: "Complemento: Informações insuficientes + autorização de dados (os dois juntos)",
+          pedeDados: true,
           text: `Prezado(a) Senhor(a),
 Agradecemos sua participação para melhorar os serviços do SUS/MG.
 Após análise do seu registro, identificamos duas situações: faltam informações para apurar os fatos e será necessário compartilhar seus dados pessoais com o órgão responsável. Por isso, pedimos que, em até 10 dias corridos:
@@ -1015,13 +1018,17 @@ function renderCard(block, card, idx){
   textDiv.innerHTML = renderTemplateHTML(card.text);
   body.appendChild(textDiv);
 
-  const hasFields = /\{\{.*?\}\}/.test(card.text);
-  const note = document.createElement("div");
-  note.className = "card-note";
-  note.textContent = hasFields
-    ? "Preencha os campos sublinhados de vermelho antes de copiar."
-    : "Sem campos de preenchimento — pronto para copiar.";
-  body.appendChild(note);
+const hasFields = /\{\{.*?\}\}/.test(card.text);
+const note = document.createElement("div");
+note.className = "card-note";
+let noteHtml = hasFields
+  ? "Preencha os campos sublinhados antes de copiar."
+  : "Sem campos de preenchimento — pronto para copiar.";
+if(card.pedeDados){
+  noteHtml += "<br>* Devem ser solicitados apenas os dados estritamente necessários para o andamento da manifestação.";
+}
+note.innerHTML = noteHtml;
+body.appendChild(note);
 
   el.appendChild(body);
 
