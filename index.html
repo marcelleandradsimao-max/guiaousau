@@ -426,11 +426,10 @@ const DEFAULT_DATA = {
       label: "Encaminhamentos",
       color: "var(--b1)",
       dot: "#7fa3b8",
-      desc: "Mensagens de encaminhamento são utilizadas para remeter uma manifestação a um ponto de resposta ou outra ouvidoria responsável pela resposta administrativa final à manifestação.",
-      foot: "* Devem ser solicitados apenas os dados estritamente necessários para o andamento da manifestação.",
+      foot: "Mensagens de encaminhamento são utilizadas para remeter uma manifestação a um ponto de resposta ou outra ouvidoria responsável pela resposta administrativa final à manifestação.",
       cards: [
           {
-          title: "Encaminhamento: Solicitação, Reclamação, Sugestão, Elogio e Informação *",
+          title: "Encaminhamento: Solicitação, Reclamação, Sugestão, Elogio e Informação ",
           text: `Prezado(a) Senhor(a),
 A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
 A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
@@ -442,7 +441,7 @@ Atenciosamente,
 Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
         },
         {
-          title: "Encaminhamento: Denúncia *",
+          title: "Encaminhamento: Denúncia ",
           text: `Prezado(a) Senhor(a),
 A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que seja providenciada resposta ao(à) manifestante, conforme a Lei nº 13.460/2017.
 A resposta deve ser registrada em até 30 dias e redigida com clareza e linguagem acessível ao cidadão (art. 16 da lei).
@@ -455,7 +454,7 @@ Atenciosamente,
 Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
         },
         {
-          title: "Encaminhamento: Comunicação de irregularidade *",
+          title: "Encaminhamento: Comunicação de irregularidade ",
           text: `Prezado(a) Senhor(a),
 A {{OUVIDORIA|Ouvidoria de Saúde}} recebeu esta manifestação e encaminha para que sejam tomadas as providências cabíveis, conforme a Lei nº 13.460/2017.
 A resposta a essa ouvidoria deverá ser redigida com clareza e linguagem acessível.
@@ -482,7 +481,7 @@ Obrigado por registrar sua manifestação. Sua participação é muito important
 Analisamos o seu registro e identificamos que se trata de uma {{TIPO: reclamação / solicitação / sugestão / elogio}}. Para esse tipo de manifestação, não é possível manter o anonimato — só denúncias podem ser feitas sem identificação.
 Por isso, pedimos que complemente seu registro em até 10 dias corridos com as seguintes informações:
 
-{{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado}}
+{{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado*}}
 Qualquer outra informação que achar importante
 
 Não precisa abrir um novo registro — é só complementar este mesmo.
@@ -520,7 +519,7 @@ Agradecemos sua participação para melhorar os serviços do SUS/MG.
 Após análise do seu registro, identificamos duas situações: faltam informações para apurar os fatos e será necessário compartilhar seus dados pessoais com o órgão responsável. Por isso, pedimos que, em até 10 dias corridos:
 
 Informe se autoriza o compartilhamento dos seus dados pessoais.
-Envie as informações necessárias: {{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado}}
+Envie as informações necessárias: {{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado*}}
 
 Não precisa abrir um novo registro — é só complementar este mesmo. Caso não sejam enviados, a manifestação poderá ser encerrada (Lei Estadual 15.298/2004, art. 8º, §1º).
 
@@ -1020,7 +1019,7 @@ function renderCard(block, card, idx){
   const note = document.createElement("div");
   note.className = "card-note";
   note.textContent = hasFields
-    ? "Preencha os campos sublinhados antes de copiar."
+    ? "Preencha os campos sublinhados de vermelho antes de copiar."
     : "Sem campos de preenchimento — pronto para copiar.";
   body.appendChild(note);
 
