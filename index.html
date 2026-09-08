@@ -450,12 +450,12 @@ Atenciosamente,
       cards: [
         {
           title: "Complemento: Manifestação anônima que não é denúncia",
-          text: `Olá!
-Obrigado por registrar sua manifestação. Sua participação é muito importante para melhorar os serviços de saúde em Minas Gerais.
+          text: `Prezado(a) Senhor(a),
+Obrigado por registrar sua manifestação. Sua participação é muito importante para melhorar os serviços do SUS/MG.
 Analisamos o seu registro e identificamos que se trata de uma {{TIPO: reclamação / solicitação / sugestão / elogio}}. Para esse tipo de manifestação, não é possível manter o anonimato — só denúncias podem ser feitas sem identificação.
 Por isso, pedimos que complemente seu registro em até 10 dias corridos com as seguintes informações:
 
-{{DADOS SOLICITADOS|Nome completo, CPF e e-mail}}
+{{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado}}
 Qualquer outra informação que achar importante
 
 Não precisa abrir um novo registro — é só complementar este mesmo.
@@ -467,13 +467,10 @@ Atenciosamente,
         {
           title: "Complemento: Informações insuficientes para apuração",
           text: `Prezado(a) Senhor(a),
-Agradecemos sua participação para melhorar os serviços públicos do Estado.
+Agradecemos sua participação para melhorar os serviços públicos do SUS/MG.
 Após análise do seu registro, identificamos que faltam informações para que o órgão responsável possa investigar o caso. Por isso, pedimos que complemente sua manifestação em até 10 dias corridos com:
 
-{{DADO 1|Nomes dos servidores envolvidos ou suas características físicas}}
-{{DADO 2|Local onde o fato aconteceu}}
-{{DADO 3|Data e horário}}
-
+{{DADOS SOLICITADOS|Liste aqui os dados necessários no caso analisado}}
 Não precisa abrir um novo registro — é só complementar este mesmo. Caso as informações não sejam enviadas, a manifestação poderá ser encerrada (Lei Estadual 15.298/2004, art. 8º, §1º).
 
 Atenciosamente,
@@ -482,7 +479,7 @@ Atenciosamente,
         {
           title: "Complemento: Autorização para compartilhar dados pessoais",
           text: `Prezado(a) Senhor(a),
-Agradecemos sua participação para melhorar os serviços públicos do Estado.
+Agradecemos sua participação para melhorar os serviços do SUS/MG.
 Após análise do seu registro, identificamos que será necessário compartilhar seus dados pessoais com o órgão responsável pela apuração. Por isso, pedimos que nos informe, em até 10 dias corridos, se você autoriza esse compartilhamento.
 Não precisa abrir um novo registro — é só complementar este mesmo. Caso a autorização não seja enviada, a manifestação poderá ser encerrada (Lei Estadual 15.298/2004, art. 8º, §1º).
 
@@ -492,7 +489,7 @@ Atenciosamente,
         {
           title: "Complemento: Informações insuficientes + autorização de dados (os dois juntos)",
           text: `Prezado(a) Senhor(a),
-Agradecemos sua participação para melhorar os serviços públicos do Estado.
+Agradecemos sua participação para melhorar os serviços do SUS/MG.
 Após análise do seu registro, identificamos duas situações: faltam informações para apurar os fatos e será necessário compartilhar seus dados pessoais com o órgão responsável. Por isso, pedimos que, em até 10 dias corridos:
 
 Informe se autoriza o compartilhamento dos seus dados pessoais
@@ -515,8 +512,8 @@ Atenciosamente,
       cards: [
         {
           title: "Intermediária: Encaminhamento a município",
-          text: `Olá!
-Obrigado pelo seu registro e por contribuir com a melhoria dos serviços públicos de Minas Gerais.
+          text: `Prezado(a) Senhor(a),
+Obrigado pelo seu registro e por contribuir com a melhoria do SUS/MG.
 Após análise, identificamos que o assunto da sua manifestação é de responsabilidade do município de {{MUNICÍPIO}}.
 Por isso, sua manifestação será encaminhada para a ouvidoria desse município, que ficará responsável por te dar a resposta final.
 
@@ -528,16 +525,6 @@ Atenciosamente,
           text: `Prezado(a) Senhor(a),
 Recebemos sua manifestação e informamos que as providências que competem a esta {{OUVIDORIA|Ouvidoria de Saúde}} estão sendo realizadas.
 Identificamos que sua demanda abrange temas diferentes, motivo pelo qual a duplicamos, possibilitando o tratamento adequado por nossas equipes internas.
-Você pode acompanhar o andamento utilizando o protocolo e a senha recebidos no momento do registro.
-
-Atenciosamente,
-{{OUVIDORIA|Ouvidoria de Saúde}}`
-        },
-        {
-          title: "Intermediária: Encaminhada para outra Ouvidoria Temática",
-          text: `Prezado(a) Senhor(a),
-Recebemos sua manifestação e informamos que as providências que competem a esta {{OUVIDORIA|Ouvidoria de Saúde}} estão sendo realizadas.
-Identificamos que sua demanda é de competência da Ouvidoria de {{OUVIDORIA TEMÁTICA}}. Para o tratamento adequado, encaminhamos a manifestação àquela equipe.
 Você pode acompanhar o andamento utilizando o protocolo e a senha recebidos no momento do registro.
 
 Atenciosamente,
@@ -617,8 +604,8 @@ Atenciosamente,
       cards: [
         {
           title: "Conclusiva: Registro no MGOUV (veio do OuvidorSUS) — identificada ou sigilosa",
-          text: `Olá!
-Obrigado pelo seu registro e por contribuir com a melhoria dos serviços públicos.
+          text: `Prezado(a) senhor(a),
+Obrigado pelo seu registro e por contribuir com a melhoria do SUS/MG.
 Sua manifestação foi registrada no sistema MGOUV e encaminhada para a Ouvidoria de {{ÓRGÃO}}, que é responsável pelo tema que você relatou.
 Para acompanhar o andamento, use o protocolo e a senha que você recebeu por e-mail no momento do registro. Você pode acompanhar pelo:
 
