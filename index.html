@@ -936,9 +936,9 @@ function renderMain(){
   head.className = "block-head";
   head.style.setProperty("--block-color", block.color);
   head.innerHTML = `
-    <h2><span class="block-num">${block.num}</span> ${block.label}</h2>
-    <p class="block-desc">${block.desc}</p>
-  `;
+  <h2><span class="block-num">${block.num}</span> ${block.label}</h2>
+  ${block.desc ? `<p class="block-desc">${block.desc}</p>` : ""}
+`;
   view.appendChild(head);
 
   if(block.foot){
