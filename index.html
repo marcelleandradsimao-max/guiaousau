@@ -699,8 +699,7 @@ Ouvidoria {{NOME DA OUVIDORIA|Nome da sua Ouvidoria}}`
         {
           title: "Conclusiva: Manifestação apurada pelo órgão responsável (denúncia/reclamação/solicitação)",
           text: `Prezado(a) Senhor(a),
-{{FRASE DE ABERTURA — para reclamações/solicitações, quando couber: "Lamentamos a situação relatada e agradecemos por compartilhar sua experiência conosco."}}
-Agradecemos sua participação — ela é essencial para melhorar os serviços de saúde em Minas Gerais.
+Agradecemos sua participação, ela é essencial para melhorar os serviços do SUS/MG.
 Encaminhamos sua manifestação ao órgão/entidade {{ÓRGÃO}}, que nos informou: {{RESPOSTA DO ÓRGÃO}}.
 Com base nessas informações, e esgotadas as competências desta {{OUVIDORIA|Ouvidoria de Saúde}}, a presente manifestação será encerrada.
 Estamos à disposição para esclarecimentos e pedimos, por gentileza, que responda à nossa pesquisa de satisfação.
@@ -1019,7 +1018,7 @@ const hasFields = /\{\{.*?\}\}/.test(card.text);
 const note = document.createElement("div");
 note.className = "card-note";
 let noteHtml = hasFields
-  ? "Preencha os campos sublinhados antes de copiar."
+  ? "Preencha os campos sublinhados de vermelho antes de copiar."
   : "Sem campos de preenchimento — pronto para copiar.";
 if(card.pedeDados){
   noteHtml += "<br>* Devem ser solicitados apenas os dados estritamente necessários para o andamento da manifestação.";
